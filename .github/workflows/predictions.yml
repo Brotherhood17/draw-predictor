@@ -1,0 +1,55 @@
+name: Update Draw Predictions
+
+on:
+  schedule:
+    # times are UTC - adjust to whenever you want each tier to drop
+    - cron: "0 8 * * *"   # Tier 1, "The Locks" - 08:00 UTC
+    - cron: "0 12 * * *"  # Tier 2, "The Watch List" - 12:00 UTC
+    - cron: "0 16 * * *"  # Tier 3, "Final Calls" - 16:00 UTC
+  workflow_dispatch:        # lets you trigger any tier manually from the Actions tab
+    inputs:
+      tier:
+        description: "Which tier to run (1, 2, or 3)"
+        required: true
+        default: "1"
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine which tier to run
+        id: tier
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "tier=${{ github.event.inputs.tier }}" >> "$GITHUB_OUTPUT"
+          else
+            HOUR=$(date -u +%H)
+            if [ "$HOUR" = "08" ]; then echo "tier=1" >> "$GITHUB_OUTPUT";
+            elif [ "$HOUR" = "12" ]; then echo "tier=2" >> "$GITHUB_OUTPUT";
+            else echo "tier=3" >> "$GITHUB_OUTPUT";
+            fi
+          fi
+
+      - name: Run prediction script
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/predict.py --tier ${{ steps.tier.outputs.tier }}
+
+      - name: Commit and push updated predictions
+        run: |
+          git config user.name "draw-predictor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/predictions.json
+          git diff --quiet --cached || git commit -m "Update predictions (tier ${{ steps.tier.outputs.tier }})"
+          git push

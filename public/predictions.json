@@ -1,0 +1,173 @@
+{
+  "updated_at": "2026-06-23T01:47:36.283510+00:00",
+  "league_draw_rate": 0.281,
+  "tiers": {
+    "1": {
+      "label": "The Locks",
+      "released_at": "2026-06-23T01:47:36.283351+00:00",
+      "picks": [
+        {
+          "home": "Team K",
+          "away": "Team L",
+          "date": "2026-06-28",
+          "draw_probability": 0.376,
+          "vs_baseline": 0.095,
+          "confidence": "Medium",
+          "analysis": [
+            "Both teams are in similar recent form (close points-per-game over their last games)",
+            "Closely matched in the table - only a small points gap separates them",
+            "Both sides have been low-scoring recently, raising the odds of a stalemate",
+            "These two have drawn 38% of their recent head-to-head meetings"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 0.2,
+            "table_points_gap": 1.0,
+            "combined_recent_goals": 1.6,
+            "head_to_head_draw_rate": 0.38
+          }
+        },
+        {
+          "home": "Team O",
+          "away": "Team P",
+          "date": "2026-06-28",
+          "draw_probability": 0.371,
+          "vs_baseline": 0.09,
+          "confidence": "Medium",
+          "analysis": [
+            "Both teams are in similar recent form (close points-per-game over their last games)",
+            "Closely matched in the table - only a small points gap separates them",
+            "Similar goal difference this season, suggesting comparable overall quality",
+            "Both sides have been low-scoring recently, raising the odds of a stalemate"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 0.2,
+            "table_points_gap": 6.0,
+            "combined_recent_goals": 1.0,
+            "head_to_head_draw_rate": 0.14
+          }
+        },
+        {
+          "home": "Team C",
+          "away": "Team F",
+          "date": "2026-06-28",
+          "draw_probability": 0.366,
+          "vs_baseline": 0.085,
+          "confidence": "Medium",
+          "analysis": [
+            "Both teams are in similar recent form (close points-per-game over their last games)"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 0.2,
+            "table_points_gap": 15.0,
+            "combined_recent_goals": 3.0,
+            "head_to_head_draw_rate": 0.29
+          }
+        }
+      ]
+    },
+    "2": {
+      "label": "The Watch List",
+      "released_at": "2026-06-23T01:47:36.283368+00:00",
+      "picks": [
+        {
+          "home": "Team B",
+          "away": "Team E",
+          "date": "2026-06-28",
+          "draw_probability": 0.361,
+          "vs_baseline": 0.08,
+          "confidence": "Medium",
+          "analysis": [
+            "Both sides have been low-scoring recently, raising the odds of a stalemate"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 1.2,
+            "table_points_gap": 9.0,
+            "combined_recent_goals": 1.4,
+            "head_to_head_draw_rate": 0.14
+          }
+        },
+        {
+          "home": "Team A",
+          "away": "Team D",
+          "date": "2026-06-28",
+          "draw_probability": 0.351,
+          "vs_baseline": 0.07,
+          "confidence": "Medium",
+          "analysis": [
+            "Closely matched in the table - only a small points gap separates them",
+            "Similar goal difference this season, suggesting comparable overall quality",
+            "Both sides have been low-scoring recently, raising the odds of a stalemate"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 1.2,
+            "table_points_gap": 3.0,
+            "combined_recent_goals": 1.8,
+            "head_to_head_draw_rate": 0.29
+          }
+        }
+      ]
+    },
+    "3": {
+      "label": "Final Calls",
+      "released_at": "2026-06-23T01:47:36.283373+00:00",
+      "picks": [
+        {
+          "home": "Team G",
+          "away": "Team H",
+          "date": "2026-06-28",
+          "draw_probability": 0.304,
+          "vs_baseline": 0.023,
+          "confidence": "Medium",
+          "analysis": [
+            "Closely matched in the table - only a small points gap separates them"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 1.0,
+            "table_points_gap": 5.0,
+            "combined_recent_goals": 3.0,
+            "head_to_head_draw_rate": 0.0
+          }
+        },
+        {
+          "home": "Team I",
+          "away": "Team J",
+          "date": "2026-06-28",
+          "draw_probability": 0.287,
+          "vs_baseline": 0.005,
+          "confidence": "Low",
+          "analysis": [
+            "Both teams are in similar recent form (close points-per-game over their last games)",
+            "Closely matched in the table - only a small points gap separates them",
+            "Similar goal difference this season, suggesting comparable overall quality",
+            "Both sides have been low-scoring recently, raising the odds of a stalemate"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 0.4,
+            "table_points_gap": 6.0,
+            "combined_recent_goals": 2.4,
+            "head_to_head_draw_rate": 0.14
+          }
+        },
+        {
+          "home": "Team M",
+          "away": "Team N",
+          "date": "2026-06-28",
+          "draw_probability": 0.282,
+          "vs_baseline": 0.001,
+          "confidence": "Low",
+          "analysis": [
+            "Both teams are in similar recent form (close points-per-game over their last games)",
+            "Both sides have been low-scoring recently, raising the odds of a stalemate",
+            "These two have drawn 33% of their recent head-to-head meetings"
+          ],
+          "supporting_stats": {
+            "recent_form_gap_ppg": 0.6,
+            "table_points_gap": 8.0,
+            "combined_recent_goals": 1.0,
+            "head_to_head_draw_rate": 0.33
+          }
+        }
+      ]
+    }
+  }
+}
