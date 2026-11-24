@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-24T19:15:50.789978+00:00",
+  "updated_at": "2026-11-24T21:37:05.901652+00:00",
   "league_draw_rate": 0.281,
   "tiers": {
     "1": {
       "label": "The Locks",
-      "released_at": "2026-11-24T19:15:50.789812+00:00",
+      "released_at": "2026-11-24T21:37:05.901491+00:00",
       "picks": [
         {
           "home": "Team K",
@@ -67,7 +67,7 @@
     },
     "2": {
       "label": "The Watch List",
-      "released_at": "2026-11-24T19:15:50.789831+00:00",
+      "released_at": "2026-11-24T21:37:05.901507+00:00",
       "picks": [
         {
           "home": "Team B",
@@ -109,7 +109,7 @@
     },
     "3": {
       "label": "Final Calls",
-      "released_at": "2026-11-24T19:15:50.789834+00:00",
+      "released_at": "2026-11-24T21:37:05.901512+00:00",
       "picks": [
         {
           "home": "Team G",
